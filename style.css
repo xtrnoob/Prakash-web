@@ -60,13 +60,13 @@
   border: none;
 }
 
-.content {
+content {
   height: 100vh;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex end;
-  padding: 80px 20% 0 0;
-text-align: right;
+  justify-content: flex-start;
+  align-items: flex-end; 
+  padding: 0 0 60px 20px;    
+  text-align: left;
 }
 
 .glow {
