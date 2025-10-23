@@ -2,41 +2,53 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body, html {
+body {
+  background-image: url('IMG-20250821-WA0005.jpg'); /* Replace with your image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero {
-  background: url("IMG-20250821-WA0005.jpg") no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
-hero h1 {
+
+.hero h1 {
   font-size: 3rem;
   color: yellow;
   margin-top: -100px;
   text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow;
   animation: glow 2s ease-in-out infinite alternate;
 }
+
 @keyframes glow {
   from {
     text-shadow: 0 0 5px yellow, 0 0 10px yellow;
   }
   to {
     text-shadow: 0 0 20px yellow, 0 0 30px yellow;
-  }
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0;
-  }
-  to {
-    text-shadow: 0 0 20px #00ffe0, 0 0 30px #00ffe0;
   }
 }
