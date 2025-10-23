@@ -40,7 +40,7 @@ body {
   font-size: 3rem;
   color: yellow;
   margin-top: -100px;
-  margin-left: -80px;
+  margin-left: -50px;
   text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow;
   animation: glow 2s ease-in-out infinite alternate;
 }
