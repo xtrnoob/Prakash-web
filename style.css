@@ -64,13 +64,13 @@
   height: 100vh;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  padding-right: 20%;
+  align-items: flex start;
+  padding: 80px 20% 0 0;
 text-align: right;
 }
 
 .glow {
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
   color: yellow;
   text-shadow: 0 0 10px yellow, 0 0 20px yellow;
