@@ -16,12 +16,20 @@ body, html {
   align-items: center;
   justify-content: center;
 }
-
-.hero h1 {
+hero h1 {
   font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 0 10px #00ffe0, 0 0 20px #00ffe0, 0 0 40px #00ffe0;
+  color: yellow;
+  margin-top: -100px;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow;
   animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px yellow, 0 0 10px yellow;
+  }
+  to {
+    text-shadow: 0 0 20px yellow, 0 0 30px yellow;
+  }
 }
 
 @keyframes glow {
