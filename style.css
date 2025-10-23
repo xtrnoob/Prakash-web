@@ -53,3 +53,13 @@ body {
     text-shadow: 0 0 20px yellow, 0 0 30px yellow;
   }
 }
+hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(4px); /* ✅ Blur effect */
+  z-index: 0;
+}
