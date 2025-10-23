@@ -1,14 +1,37 @@
-<!DOCTYPE html>
+[8:35 pm, 23/10/2025] ChatGPT: <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stuffs by Prakash</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="hero">
-    <h1>Stuffs by <span>Prakash</span></h1>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+  <div id="sidebar">
+    <ul>
+      <li onclick="toggleSub('social')">Social Media</li>
+      <ul id="social" class="submenu">
+        <li>Telegram: @wbc_prakash07</li>
+        <li>Instagram: @wbc_prakash07</li>
+      </ul>
+      <li onclick="showContact()">Contact</li>
+      <li onclick="showComStuff()">Com Stuff</li>
+      <li onclick="showWebsiteWork()">Website Work</li>
+      <li onclick="showRecovery()">Removals/Recovery</li>
+    </ul>
   </div>
+
+  <div class="search-container">
+    <button onclick="toggleSearch()">🔍</button>
+[8:35 pm, 23/10/2025] ChatGPT: <input type="text" id="searchBar" placeholder="Search..." oninput="searchText()" />
+  </div>
+
+  <div class="content">
+    <h1 class="glow">Stuffs by <br> Prakash</h1>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
