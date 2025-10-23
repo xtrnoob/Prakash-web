@@ -1,1 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
 
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-right: 100px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: yellow;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px orange;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px yellow;
+  }
+  to {
+    text-shadow: 0 0 20px orange, 0 0 30px yellow;
